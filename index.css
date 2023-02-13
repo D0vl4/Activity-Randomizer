@@ -25,9 +25,10 @@ body {
 main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+/*   justify-content: center; */
   align-items: center;
   gap: 1rem;
+  padding-top: 5rem;
   min-width: 31rem;
   background-color: var(--yellow);
 }
