@@ -20,8 +20,8 @@
       rel="icon"
       href="https://em-content.zobj.net/thumbs/120/google/350/game-die_1f3b2.png"
     />
-    <link rel="stylesheet" href="./index.css" />
-    <script src="./index.js"></script>
+    <link rel="stylesheet" href="/Activity randomizer app/index.css" />
+    <!-- <script src="/Activity randomizer app/index.js"></script> -->
   </head>
   <body>
     <main>
@@ -30,7 +30,7 @@
         <div class="header-square">
           <h1>
             ACTIVITY RANDOMIZER! 
-            <a href="./index.html">
+            <a href="/Activity randomizer app/index.html">
               <svg
                 class="reset"
                 width="18"
@@ -62,15 +62,56 @@
       </p>
       <div class="line-two"></div>
       <div class="middle-square">
-        <div id="output"></div>
+        <div id="output">...look here 👁️👁️</div>
       </div>
       <div id="see-whole-list">
-        <h4>See the whole list ▶</h4>
+        <!-- <h4>See the whole list ▶</h4> -->
       </div>
       <div class="button-and-the-line">
         <input type="button" id="generate" value="SURPRISE US!"></input>
         <div class="line-three"></div>
       </div>
     </main>
+    <script>
+      let activities = [
+  "Movie night with favorite film or TV show",
+  "Board game",
+  "Card game",
+  "Cook a meal",
+  "Wine tasting",
+  "Beer tasting",
+  "Create a scrapbook album",
+  "Create a photo album",
+  "Read a book",
+  "Listen to an audiobook",
+  "Do a home workout routine",
+  "Try a new hobby",
+  "Plan a home garden",
+  "Puzzle completion",
+  "Write love letter",
+  "Have a spa day",
+  "Plan a romantic dinner",
+  "Play a game tournament with favorite video game",
+  "Take an online dance class",
+  "Make a dessert",
+  "Do couples yoga",
+  "Take an online cooking class",
+  "Have a talent show",
+  "DIY home decor project",
+  "Have a couples book club",
+  "Have an indoor karaoke",
+  "Have a trivia night",
+  "Take an online art class",
+  "Bake cupcakes",
+  "Make pancakes",
+  "Build a blanket fort",
+  "Have a couples workout class"
+];
+
+document.getElementById("generate").addEventListener("click", function () {
+  let randomIndex = Math.floor(Math.random() * activities.length);
+  document.getElementById("output").innerHTML = activities[randomIndex];
+});
+    </script>
   </body>
 </html>

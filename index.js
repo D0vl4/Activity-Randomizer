@@ -3,11 +3,11 @@
 setTimeout(function () {
   document.getElementById("splash-screen").classList.add("hidden");
   setTimeout(function () {
-    window.location.href = "./index-2.html";
+    window.location.href = "index-2.html";
   }, 50);
 }, 3000);
 
-const activities = [
+let activities = [
   "Movie night with favorite film or TV show",
   "Board game",
   "Card game",
