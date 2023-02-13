@@ -6,6 +6,6 @@ It is a very simple application that displays random strings of suggestions for 
 
 ### Screenshot
 
-![Preview](./images/preview.png)
+![Preview](./images/preview_git.png)
 
 Here is the [live preview](https://activity-r4ndomizer.netlify.app)
