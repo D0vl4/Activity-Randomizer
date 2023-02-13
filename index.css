@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+  font-size: 14px;
+}
+
+:root {
+  --white: #fff;
+  --yellow: #ffffea;
+  --red: #f1645e;
+  --cyan: #50ccca;
+  --light-cyan: rgba(80, 204, 202, 0.2);
+  --grey: #575757;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  min-width: 31rem;
+  background-color: var(--yellow);
+}
+
+h3 {
+  color: var(--red);
+  padding-left: 4rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.header-square {
+  width: 31rem;
+  height: 2.35rem;
+  padding-top: 0.35rem;
+  background-color: var(--cyan);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+h1 {
+  font-size: 1.5rem;
+  padding-left: 4rem;
+  color: var(--yellow);
+}
+
+.line-one {
+  transform: translateY(2px);
+  height: 2px;
+  background-color: var(--red);
+}
+
+p {
+  width: 22.5rem;
+  color: var(--grey);
+  line-height: 1.5rem;
+  text-align: justify;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.line-two {
+  width: 22.5rem;
+  height: 2px;
+  background-color: var(--red);
+}
+
+.middle-square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 31rem;
+  height: 5rem;
+  background-color: var(--cyan);
+  border-top: 2px solid var(--red);
+  border-bottom: 2px solid var(--red);
+}
+
+#output {
+  font-weight: 700;
+  color: var(--yellow);
+  text-transform: uppercase;
+  max-width: 24rem;
+  text-align: center;
+}
+
+#see-whole-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 31rem;
+  height: 2rem;
+  background-color: var(--light-cyan);
+}
+
+#see-whole-list {
+  cursor: pointer;
+}
+
+h4 {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--red);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#generate {
+  width: 22.25rem;
+  height: 3.5rem;
+  background-color: var(--cyan);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--yellow);
+  border: none;
+}
+
+#generate {
+  cursor: pointer;
+}
+
+#generate:active {
+  transform: translateY(2px);
+}
+
+.line-three {
+  width: 22.5rem;
+  height: 2px;
+  background-color: var(--red);
+  transform: translateY(2px);
+}
+
+/*
+  Screen size in rem-s:
+  375 x 812px = 23.5rem x 51rem
+  
+  FONTS:
+  Montserrat
+  regular - 400
+  bold - 700
+  
+  Rampart One
+  regular - 400
+  
+  Font size:
+  10px - 0.75rem
+  12px - 0.85rem
+  14px - 1rem
+  16px - 1.25rem
+  20px - 1.5rem
+  24px - 1.75rem
+  */

@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+  font-size: 14px;
+}
+
+:root {
+  --white: #fff;
+  --yellow: #ffffea;
+  --red: #f1645e;
+  --cyan: #50ccca;
+  --light-cyan: #c4dddc;
+  --grey: #575757;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  transition: opacity 2s;
+  opacity: 1;
+}
+
+#splash-screen.hidden {
+  opacity: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 31rem;
+  background-color: var(--yellow);
+}
+
+h1 {
+  font-size: 1.5rem;
+  color: var(--red);
+  font-family: "Rampart One";
+}
+
+/*
+Screen size in rem-s:
+375 x 812px = 23.5rem x 51rem
+
+FONTS:
+Montserrat
+regular - 400
+bold - 700
+
+Rampart One
+regular - 400
+
+Font size:
+10px - 0.65rem
+12px - 0.75rem
+14px - 0.85rem
+16px - 1rem
+24px - 1.5rem
+*/
