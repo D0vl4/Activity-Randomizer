@@ -3,7 +3,7 @@
 setTimeout(function () {
   document.getElementById("splash-screen").classList.add("hidden");
   setTimeout(function () {
-    window.location.href = "index-2.html";
+    window.location.href = "./index-2.html";
   }, 50);
 }, 3000);
 
