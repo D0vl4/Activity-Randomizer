@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Activity Randomizer</title>
+    <meta name="description" content="" />
+    <meta
+      name="viewport"
+      content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height user-scalable=0"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;700&family=Rampart+One&display=swap" rel="stylesheet">
+    <link
+      rel="icon"
+      href="https://em-content.zobj.net/thumbs/120/google/350/game-die_1f3b2.png"
+    />
+    <link rel="stylesheet" href="/Activity randomizer app/index.css" />
+  </head>
+  <body>
+    <main id="page-three">
+      <div class="header">
+         <div class="header-square">
+          <h1 class="list-title">LIST OF ALL ACTIVITIES:</h1>
+        </div>
+        <div class="line-one"></div>
+      </div>
+    <div class="list-of-items">
+        <span id="stringz"></span> 
+    </div>
+    <div class="button-and-the-line">
+        <input type="button" id="back" value="BACK"></input>
+        <div class="line-three"></div>
+    </div>
+    </main>
+<script>
+     document.getElementById("back").addEventListener("click", function () {
+        window.location.href = "index-2.html";
+});
+
+let activities = [
+  "Movie night with favorite film or TV show",
+  "Board game",
+  "Card game",
+  "Cook a meal",
+  "Wine tasting",
+  "Beer tasting",
+  "Create a scrapbook album",
+  "Create a photo album",
+  "Read a book",
+  "Listen to an audiobook",
+  "Do a home workout routine",
+  "Try a new hobby",
+  "Plan a home garden",
+  "Puzzle completion",
+  "Write love letter",
+  "Have a spa day",
+  "Plan a romantic dinner",
+  "Play a game tournament with favorite video game",
+  "Take an online dance class",
+  "Make a dessert",
+  "Do couples yoga",
+  "Take an online cooking class",
+  "Have a talent show",
+  "DIY home decor project",
+  "Have a couples book club",
+  "Have an indoor karaoke",
+  "Have a trivia night",
+  "Take an online art class",
+  "Bake cupcakes",
+  "Make pancakes",
+  "Build a blanket fort",
+  "Have a couples workout class"
+];
+
+document.getElementById("stringz").innerHTML = activities.map((activity, index) => {
+    return (index + 1) + ". " + activity;
+}).join("<br>");
+
+</script>
+  </body>
+</html>

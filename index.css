@@ -25,7 +25,6 @@ body {
 main {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
   padding-top: 3rem;
   gap: 1rem;
@@ -53,7 +52,7 @@ h3 {
   user-select: none;
 }
 
-h1 {
+.title {
   font-size: 1.5rem;
   padding-left: 4rem;
   color: var(--yellow);
@@ -124,6 +123,11 @@ p {
   transform: translateX(8px);
 }
 
+.list {
+  text-decoration: none;
+  color: var(--red);
+}
+
 h4 {
   font-size: 0.85rem;
   font-weight: 700;
@@ -146,9 +150,6 @@ h4 {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
-
-#generate {
   cursor: pointer;
 }
 
@@ -161,6 +162,49 @@ h4 {
   height: 2px;
   background-color: var(--red);
   transform: translateY(2px);
+}
+
+.line-four {
+  width: 15rem;
+  height: 2px;
+  background-color: var(--red);
+  transform: translateY(2px);
+}
+
+.list-title {
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--yellow);
+}
+
+span {
+  font-size: 0.85rem;
+  color: var(--grey);
+}
+
+#back {
+  width: 22.25rem;
+  height: 3.5rem;
+  background-color: var(--cyan);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--yellow);
+  border: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+#back:active {
+  transform: translateY(2px);
+}
+
+.vlado {
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--red);
 }
 
 /*
@@ -183,3 +227,10 @@ h4 {
   20px - 1.5rem
   24px - 1.75rem
   */
+
+/* 
+    <!-- <div class="button-and-the-line">
+        <input type="button" id="add-new" value="ADD NEW"></input>
+        <div class="line-four"></div>
+      </div> -->
+      */
