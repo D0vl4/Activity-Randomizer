@@ -25,10 +25,10 @@ body {
 main {
   display: flex;
   flex-direction: column;
-/*   justify-content: center; */
+  /* justify-content: center; */
   align-items: center;
-  gap: 1rem;
   padding-top: 5rem;
+  gap: 1rem;
   min-width: 31rem;
   background-color: var(--yellow);
 }
@@ -57,6 +57,10 @@ h1 {
   font-size: 1.5rem;
   padding-left: 4rem;
   color: var(--yellow);
+}
+
+.reset {
+  transform: translateX(5rem);
 }
 
 .line-one {
@@ -132,6 +136,10 @@ h4 {
   font-weight: 700;
   color: var(--yellow);
   border: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 #generate {
@@ -143,7 +151,7 @@ h4 {
 }
 
 .line-three {
-  width: 22.5rem;
+  width: 22.25rem;
   height: 2px;
   background-color: var(--red);
   transform: translateY(2px);
