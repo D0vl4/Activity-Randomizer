@@ -110,9 +110,23 @@
   "Have a couples workout class"
 ];
 
+let usedIndices = [];
+let currentIndex = 0;
+
 document.getElementById("generate").addEventListener("click", function () {
-  let randomIndex = Math.floor(Math.random() * activities.length);
-  document.getElementById("output").innerHTML = activities[randomIndex];
+  if (usedIndices.length === activities.length) {
+    usedIndices = [];
+  }
+
+  let randomIndex;
+  do {
+    randomIndex = Math.floor(Math.random() * activities.length);
+  } while (usedIndices.includes(randomIndex));
+  
+  usedIndices.push(randomIndex);
+  currentIndex = randomIndex;
+
+  document.getElementById("output").innerHTML = activities[currentIndex];
 });
     </script>
   </body>
