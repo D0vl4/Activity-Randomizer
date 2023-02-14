@@ -116,16 +116,13 @@ p {
   width: 31rem;
   height: 2rem;
   background-color: var(--light-cyan);
-}
-
-#see-whole-list {
   cursor: pointer;
 }
-
+/* 
 #see-whole-list:active h4 {
   cursor: pointer;
   transform: translateX(8px);
-}
+} */
 
 .list {
   text-decoration: none;
