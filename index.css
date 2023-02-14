@@ -142,7 +142,7 @@ h4 {
 #generate {
   width: 22.25rem;
   height: 3.5rem;
-  background-color: var(--cyan);
+  background-color: var(--red);
   font-size: 1.25rem;
   font-weight: 700;
   color: var(--yellow);
