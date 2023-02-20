@@ -15,7 +15,8 @@
   --grey: #575757;
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
 
@@ -23,7 +24,7 @@ body {
   min-height: 100vh;
   display: flex;
   justify-content: center;
-/*   overflow: hidden; */
+  /*   overflow: hidden; */
 }
 
 main {
@@ -116,8 +117,9 @@ p {
   width: 31rem;
   height: 2rem;
   background-color: var(--light-cyan);
-/*   cursor: pointer; */
+  /*   cursor: pointer; */
 }
+
 /* 
 #see-whole-list:active h4 {
   cursor: pointer;
@@ -158,8 +160,14 @@ h4 {
   transform: translateY(2px);
 }
 
+.button-and-the-line {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .line-three {
-  width: 22.25rem;
+  width: 21rem;
   height: 2px;
   background-color: var(--red);
   transform: translateY(2px);

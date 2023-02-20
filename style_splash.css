@@ -33,6 +33,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
   min-width: 31rem;
   background-color: var(--yellow);
 }
@@ -41,6 +42,13 @@ h1 {
   font-size: 1.5rem;
   color: var(--red);
   font-family: "Rampart One";
+}
+
+
+h4 {
+  color: var(--red);
+  font-weight: 400;
+  transform: translateY(20rem);
 }
 
 /*
